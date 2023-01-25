@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .previous {
+            background-color: #f8d0d0;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table border="2">
+            <tr>
+                <th>Header Coloumn 1</th>
+                <th>Header Coloumn 2</th>
+                <th>Header Coloumn 3</th>
+                <th>Header Coloumn 4</th>
+            </tr>
+            <tr>
+                <td>Row-2 Item-1</td>
+                <td>Row-2 Item-2</td>
+                <td rowspan="2"><b>Row-2 Nested Table 1</b><br><br>
+                    <table border="1">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 3 Header</th>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                <td>Row-2 Item 4 <br>A second line</td>
+            <tr>
+                <td><b>Row-3 Nested Table 2</b><br><br>
+                    <table border="1">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                <td>Row-3 Item-2</td>
+                <td rowspan="2">Row-3 Item-3</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Row-4 Item-1</td>
+                <td>Row-4 Item-2</td>
+                <td>Row-4 Item-3</td>
+            </tr>
+            <tr>
+                <td colspan="4">Row-5 Last Row Of Outer Table</td>
+            </tr>
+        </table>
+        <br />
+        <hr />
+        <br />
+        <table border="2">
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 am</td>
+                <td rowspan="2">5:00 pm</td>
+                <td style="text-align: center;">Introduction to XML</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Validity: DTD and relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 am</td>
+                <td>11:00 am</td>
+                <td rowspan="2" style="text-align: center;">X Path</td>
+            </tr>
+            <tr>
+                <td>11:00 am</td>
+                <td>2:00 pm</td>
+            </tr>
+            <tr>
+                <td>2:00 pm</td>
+                <td>5:00 pm</td>
+                <td style="text-align: center;">XSL Transformations</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 am</td>
+                <td>12:00 pm</td>
+                <td style="text-align: center;">XSL Formatting Objects</td>
+            </tr>
+        </table>
+        <br />
+        <hr />
+        <br />
+        <table border="4">
+            <tr>
+                <th colspan="6">Atheletics Day time Table</th>
+            </tr>
+            <tr>
+                <th>Area</th>
+                <th>10am-11am</th>
+                <th>11am-12pm</th>
+                <th>12pm-1pm</th>
+                <th>1pm-2pm</th>
+                <th>2pm-3pm</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Track</th>
+                <td>400m</td>
+                <td>200m</td>
+                <th rowspan="3">Lunch</th>
+                <td>800m</td>
+                <td>100m</td>
+            </tr>
+            <tr>
+                <td>Hurdles</td>
+                <td>1500m</td>
+                <td>Free</td>
+                <td>80m</td>
+            </tr>
+            <tr>
+                <th>Field</th>
+                <td>Discuss</td>
+                <td>Javelien</td>
+                <td>Shot Put</td>
+                <td>Hammer Throw</td>
+            </tr>
+        </table>
+        <br />
+        <hr />
+        <br />
+        <table border="3" bgcolor="41c541">
+            <tr>
+                <th colspan="9">Mark Sheet Of 2077</th>
+            </tr>
+            <tr>
+                <th rowspan="4">S.No</th>
+                <th rowspan="4">Name</th>
+                <th colspan="6">Subject</th>
+                <th rowspan="4">Total</th>
+            </tr>
+            <tr>
+                <th colspan="2">Science</th>
+                <th colspan="2">Social</th>
+                <th colspan="2">Computer</th>
+            </tr>
+            <tr>
+                <th colspan="6">Marks</th>
+            </tr>
+            <tr>
+                <th>Internal</th>
+                <th>Final</th>
+                <th>Internal</th>
+                <th>Final</th>
+                <th>Internal</th>
+                <th>Final</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Bikash</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Bikesh</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Avinash</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Ram</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Abdul</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th colspan="9">Total</th>
+            </tr>
+            <tr>
+                <td colspan="9" style="text-align: center;">Coded By AzaanUllah Khan</td>
+            </tr>
+        </table>
+    </center>
+    <a href="./index.html" class="previous">&laquo; Previous</a>
+</body>
+
+</html>

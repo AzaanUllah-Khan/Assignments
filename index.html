@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Page</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        /* Set height of body and the document to 100% */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 20px;
+            font-size: 17px;
+            width: 20%;
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+        #Home {
+            background-color: red;
+        }
+
+        #News {
+            background-color: green;
+        }
+
+        #Contact {
+            background-color: blue;
+        }
+
+        #About {
+            background-color: orange;
+        }
+        #Party {
+            background-color: thistle;
+        }
+
+        .notification {
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            padding: 15px 26px;
+            position: relative;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .notification:hover {
+            background: rgb(198, 201, 48);
+        }
+
+        .notification .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            padding: 5px 10px;
+            border-radius: 50%;
+            background: rgb(179, 108, 108);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Assignment1</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')">Assignmnet2</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Assignment3</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">Assignment4</button>
+    <button class="tablink" onclick="openPage('Party', this, 'thistle')">Assignment5</button>
+
+    <div id="Home" class="tabcontent">
+        <h3>Assignment 1</h3>
+        <a href="./assignment 1.html" class="notification">
+            <span>Assignment</span>
+            <span class="badge">1</span>
+        </a>
+    </div>
+    
+    <div id="News" class="tabcontent">
+        <h3>Assignment 2</h3>
+        <a href="./assignment 2.html" class="notification">
+            <span>Assignment</span>
+            <span class="badge">2</span>
+        </a>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Assignment 3</h3>
+        <a href="./assignment 3.html" class="notification">
+            <span>Assignment</span>
+            <span class="badge">3</span>
+        </a>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>Assignment 4</h3>
+        <a href="./assignment 4.html" class="notification">
+            <span>Assignment</span>
+            <span class="badge">4</span>
+        </a>
+    </div>
+    <div id="Party" class="tabcontent">
+        <h3>Assignment 5</h3>
+        <a href="./assignment 5.html" class="notification">
+            <span>Assignment</span>
+            <span class="badge">5</span>
+        </a>
+    </div>
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
